@@ -1,0 +1,751 @@
+/* Add your styles here */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #023a02, #878282);
+    overflow-x: hidden; /* This hides the horizontal scrollbar */
+}
+
+header {
+    background-image: rgba(0, 0, 0, 0.3) url('https://static.wixstatic.com/media/11062b_952485dce28e4eac9e9f09d63fdc9ada~mv2.jpg/v1/fill/w_1903,h_930,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_952485dce28e4eac9e9f09d63fdc9ada~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: -0px 50px;
+    margin-top: -50px;
+    margin-bottom: 130px;
+}
+
+.logo {
+    margin-bottom: -20px; /* Adjust the margin to move the logo up */
+    animation: slideInDown 1s ease; /* Enter animation */
+}
+
+.logo img {
+    height: 150px; /* Adjust the height of your logo */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px -38px;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 7px 40px; /* Adjust the margin to increase the space between menu links */
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    transition: color 0.3s ease;
+}
+
+/* Main menu item styling */
+nav ul li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: color 0.3s;
+    animation: fadeInRight 1s ease; /* Enter animation */
+}
+
+/* Dropdown item styling */
+nav ul li ul li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: color 0.3s;
+    padding-left: 1px;
+    font-size: 18px; /* Adjust the font size for dropdown links */
+}
+
+/* Main and dropdown item hover color */
+nav ul li a:hover {
+    color: #00a19d; /* Updated hover color for main items */
+}
+
+nav ul li ul li a:hover {
+    color: #00a19d; /* Updated hover color for dropdown items */
+}
+
+/* Underlining for both main and dropdown links */
+nav ul li a::before,
+nav ul li ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+/* Underlining on hover for both main and dropdown links */
+nav ul li a:hover::before {
+    transform: scaleX(1); /* Underlining for main items on hover */
+}
+
+nav ul li ul li a:hover::before {
+    transform: scaleX(1); /* Underlining for dropdown items on hover */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #33333300; /* Dark background for dropdown */
+    text-align: left; /* Align the dropdown to the left */
+    padding-top: 10px;
+    }
+    
+
+li:hover .dropdown {
+    display: block;
+}
+
+.main-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold; /* Make it bold */
+    text-align: left;
+    padding-left: 50px;
+    animation: fadeIn 5s ease; /* Enter animation */
+}
+
+.organization-image {
+    position: absolute;
+    top: 0; /* Adjust the top position as needed */
+    left: 0; /* Adjust the left position as needed */
+    width: 850px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 650px;
+    margin-top: 180px;
+}
+
+
+.main-heading h1 {
+    color: #000; /* Teal color */
+    font-size: 200px; /* Set the font size to 90 */
+    margin-bottom: -90px;
+    margin-top: -90px;
+}
+
+.main-heading h2 {
+    color: #ffffff; /* Teal color */
+    font-size: 70px; /* Set the font size to 90 */
+}
+
+.description {
+    color: white;
+    font-size: 18px; /* Set the font size to 24 */
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    max-width: 800px; /* Adjust the max-width based on your design */
+    margin: 0px; /* Center the description with top and bottom margin */
+    animation: slideInUp 1s ease; /* Enter animation */
+}
+
+.main-content {
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Hide the content that overflows */
+}
+
+.investments-section {
+    text-align: center;
+}
+
+.investments-section h2 {
+    color: #ffffff; /* Teal color */
+    font-size: 70px;
+    font-family: 'Bebas Neue', sans-serif; /* Add the custom font */
+    margin-bottom: 60px;
+    margin-top: -10px;
+}
+
+.investment-container {
+    display: inline-block;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.investment-container img {
+    width: 350px; /* Adjust the maximum width of the logo image */
+    height: 437.5px;
+    border-radius: 20px; /* Adjust the border-radius for rounded edges */
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.investment-container img:hover {
+    transform: scale(1.07); /* Adjust the scale factor for the enlargement effect */
+}
+
+.deal-in-section {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0); /* Add the box shadow */
+}
+
+.deal-in-section h2 {
+    color: #000; /* Teal color */
+    font-size: 70px;
+    font-family: 'Bebas Neue', sans-serif; /* Add the custom font */
+    margin-bottom: 20px;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.deal-in-desc p {
+    margin-top: -30px;
+    padding:  50px 30px 30px 100px;
+    text-align: justify;
+    width: 50%;
+
+}
+
+.company-container {
+    display: inline-block;
+    margin-left: -20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.company-container img {
+    max-width: 200px;
+}
+
+.company-container p {
+    color: #000;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-top: -800px; /* Adjusted the margin-top */
+    margin-left: 50px;
+    margin-right: 50px; /* Adjusted the margin-right */
+}
+
+.about-content h2 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+.about-start-content p {
+    padding: 20px;
+    color: #ffffff;
+    margin-right: 600px;
+}
+
+.about-content-container {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0); /* Add the box shadow */
+    margin: 20px 0px 10px; /* Adjusted margin to make it symmetrical */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex; /* Added flex display to allow children to be in a row */
+}
+
+/* Three-column layout */
+.our-mission,
+.our-vision,
+.our-core-values {
+    flex: 1;
+    margin-right: 20px; /* Adjust the margin between columns */
+}
+
+.our-mission p,
+.our-vision p,
+.our-core-values p {
+    color: #000;
+    background-color: #ffffff;
+    height: 250px; /* Adjust the height as needed */
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0); /* Add the box shadow */
+}
+
+.our-mission h2,
+.our-vision h2,
+.our-core-values h2 {
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+ /* Add this CSS to your existing styles.css */
+
+@keyframes sparkle {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-5px);
+      opacity: 0;
+    }
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.293);
+    border-radius: 50%;
+    animation: sparkle 1s infinite;
+  }
+  
+/* Add the ignition effect container */
+.ignition-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* GOVERNANCE CSS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 40px 40px; /* Adjust the gap between grid items */
+    padding: 40px;
+    margin-top: -650px;
+}
+
+.grid-item {
+    border: 2px solid #ddd; /* Border style */
+    border-radius: 10px; /* Border radius for rounded corners */
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: scale(1.13); /* Enlarge the container on hover */
+}
+
+.grid-item img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    border-radius: 50%; /* Circular border for the image */
+    margin-bottom: 10px;
+}
+
+.grid-item h3,
+.grid-item p {
+    margin: 0;
+    padding: 3px; /* Adjust padding as needed */
+    font-family: 'Bebas Neue', sans-serif; /* Add the custom font */
+}
+
+.grid-item h3 {
+    font-size: 25px;
+}
+
+.grid-item p {
+    color: #000;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Align content to the left */
+    animation: fadeInRight 0.7s ease; /* Enter animation */
+}
+
+.popup.leave {
+    animation: backOutUp 0.5s ease; /* Leave animation */
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 800px ; /* Set the maximum width as needed */
+    height: 650px; /* Set the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    position: relative; /* Add relative positioning to the popup-content */
+}
+
+#popup-name {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#popup-position {
+    margin-top: -15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#popup-image {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px; /* Apply border-radius for rounded corners */
+    padding: 20px
+}
+    
+#popup-details, #popup-details2 {
+    width: 75%;
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* footer */
+
+/* Update this CSS in your existing styles.css */
+
+footer {
+    color: #000000;
+    padding: 20px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-column-about {
+    width: 350px;
+    margin-right: 10px;
+  }
+
+  .footer-column-about h3 {
+    color: #ffffff;
+    margin-bottom: 8px; /* Adjust the margin to reduce the space */
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin-right: 30px; /* Adjust the margin to increase the gap between columns */
+}
+  
+  .footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 8px; /* Adjust the margin to reduce the space */
+  }
+
+  .footer-column ul li a {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal; /* Set the default font weight */
+    transition: color 0.3s ease; /* Add a smooth transition for color change */
+  }
+
+  .footer-column ul li a:hover {
+    color: #000; /* Change the color on hover */
+    font-weight: bold; /* Set the font weight to bold on hover */
+  }
+  
+  /* Underlining for links on hover */
+  .footer-column ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #00a100; /* Color of the underline */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+  
+  .footer-column ul li a:hover::before {
+    transform: scaleX(1);
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0px;
+}
+  
+  .copyright {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  /* Thick line centered within the footer */
+  footer {
+    border-top: 5px solid #000000;
+    box-sizing: border-box;
+  }
+
+  /* Add this to your existing styles.css */
+
+/* Events Section */
+.events-section {
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0 ;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Add the box shadow only at the top */
+    padding: 5px 30px 30px 30px;
+    background: linear-gradient(to bottom, #ffffff, transparent 120%); /* Add the gradient */
+}
+
+  
+  .events-section h2 {
+    color: #000; /* Teal color */
+    font-size: 70px;
+    font-family: 'Bebas Neue', sans-serif; /* Add the custom font */
+    margin-bottom: 60px;
+  }
+  
+  /* Event Grid */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: 'Poppins', sans-serif; /* Add the custom font */
+  }
+  
+  .event-container {
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start; /* Align items at the start (top) of the container */
+    padding: 5px;
+    background-color: #ffffff;
+    height: 250px; /* Adjust the height as needed */
+  }
+  
+  .event-container img {
+    max-width: 150px; /* Adjust the maximum width of the event image */
+    border-radius: 2px; /* Adjust the border-radius for rounded edges */
+    margin-right: 10px;
+    object-fit: cover; /* Maintain aspect ratio and zoom in without stretching */
+    height: 100%; /* Make the image span the whole height of the container */
+  }
+  
+  .event-details {
+    text-align: left;
+  }
+  
+  .event-details h3 {
+    color: #000;
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif; /* Add the custom font */
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+  
+  .event-date {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 3px; /* Adjusted margin to bring the date closer to the title */
+  }
+  
+  .event-description {
+    color: #000;
+    font-size: 16px;
+    margin-top: 10px; /* Add margin between date and description */
+    margin-bottom: 10px;
+  }
+  
+  .event-details a {
+    color: #000;
+    text-decoration: underline;
+    display: block;
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  .event-details a:hover {
+    color: #00a100; /* Updated hover color */
+  }
+  
+  
+  .investments-section,
+  .events-section{
+    transform: translateY(100%); /* Start from the bottom */
+    transition: transform 1.5s ease;
+  }
+  
+  /* Slide-up effect */
+  .investments-section.slideUp,
+  .events-section.slideUp {
+    transform: translateY(0); /* Slide up to its position */
+  }
+
+/* Add this CSS to your existing stylesheet or create a new one */
+.counter-section {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px); /* Adjust the initial translateY value */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Visible state - slide up */
+.counter-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.counter {
+    text-align: center;
+    width: 200px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust the spacing between counters */
+}
+
+.counter h2 {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.count {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; /* Change the color as needed */
+}
+
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.company-section {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: flex-start; /* Start from the top */
+    flex-wrap: wrap;
+    padding: 100px 20px 50px 100px;
+    margin: 0 50px 50px 50px;
+    height: 750px;
+    border-radius: 30px 30px 0 0 ;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Add the box shadow only at the top */
+    background: linear-gradient(to bottom, #ffffff, transparent 150%); /* Add the gradient */
+    overflow: hidden; /* Add overflow: hidden to clip any content outside the container */
+}
+
+.company-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 100px;
+}
+
+.company-images img {
+    width: 250px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    margin: 0 auto; /* Center the slider within the container */
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(250px);
+}
+
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img {
+    transform: translateY(-20px) scale(1.2);
+}
